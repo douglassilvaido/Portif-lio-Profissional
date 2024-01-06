@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.main {
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 70vw;
+}
+
+.main::before,
+.main::after {
+  content: "";
+  background-image: url(../imgs/background.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 140vw;
+  height: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.main::after {
+  content: "";
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: 0;
+  background-image: url(../imgs/background.svg);
+  transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .main::before,
+  .main::after {
+    width: 70vw;
+  }
+}

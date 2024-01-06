@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/acordeon.css" />
+    <link rel="stylesheet" href="assets/css/languages.css" />
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <link rel="stylesheet" href="assets/css/experiencias.css" />
+    <link rel="stylesheet" href="assets/css/skills.css" />
+
+    <script defer src="assets/JS/acordeon.js"></script>
+    <script defer src="assets/JS/api.js"></script>
+    <script defer src="assets/JS/main.js"></script>
+
+    <title>Portifólio Douglas H Silva</title>
+  </head>
+  <body>
+    <div class="main">
+      <header class="header">
+        <img
+          src="./assets/imgs/Foto Douglas.jpg"
+          alt="Foto de Douglas Silva"
+          class="photo"
+        />
+
+        <h1 class="title">
+          Olá,<br />
+          eu sou o<br />
+          <span id="profile.name">Carregando...</span>
+        </h1>
+
+        <div class="information">
+          <p class="job" id="profile.job">Carregando...</p>
+          <p class="location" id="profile.location">Carregando...</p>
+          <p class="phone">
+            <a href="tel:(34) 99999-9999" id="profile.phone">Carregando...</a></p>
+          <p class="email">
+            <a href="mailto:ex@gmail.com" id="profile.email">Carregando...</a></p>
+        </div>
+      </header>
+
+      <section class="acordeon">
+        <button class="trigger" type="button">skills</button>
+
+        <div class="content">
+          <div class="skills">
+            <div class="hab-prof">
+              <h3>Habilidades profissionais:</h3>
+              <img src="./assets/imgs/icons/languages/html.svg" alt="HTML" />
+              <img src="./assets/imgs/icons/languages/css.svg" alt="CSS" />
+              <img src="./assets/imgs/icons/languages/js.svg" alt="JS" / >
+              <img src="./assets/imgs/icons/languages/react.svg" alt="React" />
+            </div>
+            <div class="hab-pessoal">
+              <h3>Habilidades pessoais:</h3>
+              <ul>
+                <li>Facilidade com tarefas práticas</li>
+                <li>Comunicação</li>
+                <li>Trabalho em Equipe</li>
+                <li>Organização</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="acordeon">
+        <button class="trigger" type="button">Idiomas</button>
+
+        <div class="content">
+          <ul class="languages">
+            <li class="lang">Português</li>
+            <li class="lang">Inglês</li>
+            <li class="lang">Espanhol</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="acordeon">
+        <button class="trigger" type="button">Portifólio</button>
+
+        <div class="content">
+          <div class="repositorys">
+            <h3 class="repos">Criando um App de lembrete</h3>
+            <p>
+              <a href="#" target="_blank"
+                >https://www.dio.me/Coffee-Talk-Java-and-Opinions/GitHub-URL-find-use-example</a
+              >
+            </p>
+            <h3 class="repos">Layout Uber</h3>
+            <p>
+              <a href="#" target="_blank"
+                >https://www.dio.me/Coffee-Talk-Java-and-Opinions/GitHub-URL-find-use-example</a
+              >
+            </p>
+            <h3 class="repos">Criando Front-end com React</h3>
+            <p>
+              <a href="#" target="_blank"
+                >https://www.dio.me/Coffee-Talk-Java-and-Opinions/GitHub-URL-find-use-example</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="acordeon">
+        <button class="trigger" type="button">Experiência Profissional</button>
+
+        <div class="content">
+          <div class="exp-profis">
+            <h3>Front-end Developer / dio.me</h3>
+            <span class="time-action">Jan 2020 - Current </span>
+            <p>
+              Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in
+              deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
+              soluta ea et odio, unde doloremque repellendus iure, iste.
+            </p>
+            <h3>Front-end Developer / Philips</h3>
+            <span class="time-action">Jan 2020 - Current </span>
+            <p>
+              Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in
+              deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
+              soluta ea et odio, unde doloremque repellendus iure, iste.
+            </p>
+            <h3>UX designer/ dio.me</h3>
+            <span class="time-action">Jan 2020 - Current </span>
+            <p>
+              Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in
+              deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
+              soluta ea et odio, unde doloremque repellendus iure, iste.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
